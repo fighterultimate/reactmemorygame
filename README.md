@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Psuedo code lets gooooooo
 
-## Available Scripts
+    Create front end 
 
-In the project directory, you can run:
+Navbar component {
 
-### `yarn start`
+clicky game text that when clicked triggers a new game
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+text to tell user how to start game 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+score and top score divs displaying score
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    }
 
-### `yarn build`
+    Body component {
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+        backround image containig text explaining how to play the game
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        12 images
+    }
 
-### `yarn eject`
+    functionality 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    create array of images
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    map the array to display all the images
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+add state object that has a clicked boolean, when game starts all clicked will be false, clicked turns into true if any image is clicked, if any image with clicked true is clicked again the game is over and the state is reset. compare current score to top score and keep that largest number
 
-## Learn More
+    onClick function{
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+        randomize array
+        keep score
+        if correct show correct if not show opposite
+        for top score in the function handling the increment check if the variable that has the new top score is greater than the top score in the state then update it with the new number
+    }# reactmemorygame
