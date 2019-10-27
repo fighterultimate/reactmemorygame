@@ -1,0 +1,71 @@
+[{
+    "id":1,
+    "name":"Ness",
+    "image":"https://www.smashbros.com/assets_v2/img/fighter/ness/main.png",
+    "clicked":false
+},{
+    "id":2,
+    "name":"pikachu",
+    "image":"https://www.ssbwiki.com/images/thumb/a/a0/Pikachu_SSB4.png/250px-Pikachu_SSB4.png",
+    "clicked":false
+},{
+    "id":3,
+    "name":"samus",
+    "image":"https://www.smashbros.com/assets_v2/img/fighter/samus/main.png",
+    "clicked":false
+},{
+    "id":4,
+    "name":"snake",
+    "image":"https://www.ssbwiki.com/images/thumb/0/02/Snake_SSBU.png/250px-Snake_SSBU.png",
+    "clicked":false
+},{
+    "id":5,
+    "name":"rob",
+    "image":"https://vignette.wikia.nocookie.net/vsbattles/images/7/70/ROB_Ultimate.png/revision/latest?cb=20180612233227",
+    "clicked":false
+},{
+    "id":6,
+    "name":"bowser",
+    "image":"https://www.ssbwiki.com/images/thumb/4/49/Bowser_SSBU.png/250px-Bowser_SSBU.png",
+    "clicked":false
+},{
+    "id":7,
+    "name":"pokemon trainer",
+    "image":"https://www.ssbwiki.com/images/thumb/0/01/Pok%C3%A9mon_Trainer-Alt1_SSBU.png/300px-Pok%C3%A9mon_Trainer-Alt1_SSBU.png",
+    "clicked":false
+},{
+    "id":8,
+    "name":"fox",
+    "image":"https://www.ssbwiki.com/images/thumb/2/2f/Fox_SSBU.png/250px-Fox_SSBU.png",
+    "clicked":false
+},{
+    "id":9,
+    "name":"link",
+    "image":"https://www.ssbwiki.com/images/thumb/8/84/Link_SSBU.png/250px-Link_SSBU.png",
+    "clicked":false
+},{
+    "id":10,
+    "name":"ganon",
+    "image":"https://www.smashbros.com/assets_v2/img/fighter/ganondorf/main.png",
+    "clicked":false
+},{
+    "id":11,
+    "name":"peach",
+    "image":"https://www.ssbwiki.com/images/thumb/7/74/Peach_SSBU.png/250px-Peach_SSBU.png",
+    "clicked":false
+},{
+    "id":12,
+    "name":"pacman",
+    "image":"https://www.ssbwiki.com/images/thumb/0/03/Pac-Man_SSBU.png/250px-Pac-Man_SSBU.png",
+    "clicked":false
+},{
+    "id":13,
+    "name":"marth",
+    "image":"https://www.ssbwiki.com/images/thumb/e/e9/Marth_SSBU.png/1200px-Marth_SSBU.png",
+    "clicked":false
+},{
+    "id":14,
+    "name":"pauletena",
+    "image":"https://img.rankedboost.com/wp-content/plugins/super-smash-bros-ultimate/assets/character-images-main/Palutena_SSBU.png",
+    "clicked":false
+}]
