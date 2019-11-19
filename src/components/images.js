@@ -17,7 +17,7 @@ class Images extends Component {
 
 
 
-        return <img onClick={this.props.handleClick} key={this.id} alt={this.props.name} src={this.props.image} className="characters" />
+        return <img onClick={this.props.onClick} key={this.id} alt={this.props.name} src={this.props.image} className="characters" />
 
             
 

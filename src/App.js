@@ -5,38 +5,43 @@ import Images from './components/images';
 import characters from './characters.json';
 
 class App extends Component {
-constructor(props){
-  super(props)
+  constructor(props) {
+    super(props)
 
-  this.state = {
-    characters,
-    score: 0,
-    topScore: 0,
-    clicked: [],
+    this.state = {
+      characters,
+      score: 0,
+      topScore: 0,
+      clicked: [],
 
-  };
-}
-  
+    };
+  }
 
-cardClicked=(card)=> {
-  if(this.state.clicked.includes(card.id)){
-    console.log(card.id)
 
-alert("You lose")
-this.setState({clicked:[]})
-this.randomizeArray(card);
-  } 
-  else  {
-   console.log(card)
-    this.setState({clicked:[...this.state.clicked,card.id],score:this.state.score+1,topScore:Math.max(this.state.score,this.state.topScore)}) 
-    this.randomizeArray(card);
+  cardClicked = (card) => {
+    if (this.state.clicked.includes(card)) {
+      console.log(card.id)
+
+      alert("You lose")
+      this.setState({ clicked: [] })      
+    }
+    else if(this.state.score===13){
+
+      alert("You win")
+    }
+    else {
+      console.log(card)
+      this.setState({ clicked: [...this.state.clicked, card], score: this.state.score + 1, topScore: Math.max(this.state.score, this.state.topScore) })
+    }
+
+    this.randomizeArray(this.state.characters);
 
   }
-}
-  //   handleInputChange=(e)=>{
 
-  //     this.setState({[e.target.name]:e.target.value})
-  // }
+  handleInputChange = (e) => {
+
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
 
   randomizeArray = arr => {
@@ -47,9 +52,10 @@ this.randomizeArray(card);
 
   handleClick = arr => {
 
-
+    console.log("works")
 
     this.randomizeArray(arr);
+    ;
 
 
   }
@@ -62,8 +68,18 @@ this.randomizeArray(card);
 
         <Navbar score={this.state.score} topScore={this.state.topScore} />
         <div className="img">Click on an image to earn points, but don't click on any more than once!</div>
-        <div className="ppp">{this.state.characters.map((characters, index) => <Images key={characters.id}
-          onClick={() => this.handleClick(this.state.characters)} name={characters.name} image={characters.image} />)}
+        <div className="ppp">
+          {this.state.characters.map((character, index) => {
+            // eslint-disable-next-line no-unused-expressions
+            return (
+              <Images 
+                key={character.id}
+                onClick={() => { this.handleClick(this.state.characters); this.cardClicked(character.id) }} 
+                name={character.name} 
+                image={character.image} 
+              />
+            );
+          })}
         </div>
 
       </div>
